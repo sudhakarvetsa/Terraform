@@ -13,10 +13,9 @@ provider "linux" {
     user     = "ubuntu"
     password = "root123"
 }
-
 resource "linux_file" "testfile" {
- path = "/tmp/testdir"
-owner = 1000
+ path = "/tmp/testdir1"
+ owner = 1000
  group = 1000
  mode ="755"
 }
