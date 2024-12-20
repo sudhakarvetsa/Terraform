@@ -16,4 +16,7 @@ provider "linux" {
 
 resource "linux_file" "testfile" {
     path = "/tmp/testdir"
+ owner = 1000
+ group = 1000
+ mode ="755"
 }
